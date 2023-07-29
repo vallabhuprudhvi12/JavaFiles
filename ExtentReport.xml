@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="EXtentReportSuite">
+	
+  <test name="Test Facebook">
+	  <parameter name="browserName" value="Chrome"/>
+	  <parameter name="author" value="vallabhuprudhvi"/>
+    <classes>
+      <class name="ExtentReports.TestClass">
+		  <methods>
+			  <include name="FacebookTest"/>
+		  </methods>
+      </class>
+   </classes>
+  </test> <!-- Test --> 
+   <test name="Test Google">
+	   	  <parameter name="browserName" value="Firefox"/>
+	   	  <parameter name="author" value="vallabhusatya"/>
+    <classes>
+      <class name="ExtentReports.TestClass">
+		  <methods>
+			  <include name="GoogleTest"/>
+		  </methods>
+      </class>
+   </classes>
+  </test> <!-- Test -->
+   <test name="Test OrangeHrm">
+	   	  <parameter name="browserName" value="Edge"/>
+	   	  <parameter name="author" value="vallabhuraju"/>
+    <classes>
+      <class name="ExtentReports.TestClass">
+		  <methods>
+			  <include name="OrangeHrmTest"/>
+		  </methods>
+      </class>
+   </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

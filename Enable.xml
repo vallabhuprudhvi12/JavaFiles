@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ParameterSuite">
+	 
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+  <parameter name="username" value="Admin"/>
+  <parameter name="password" value="admin123"/>
+  <parameter name="sleepTime" value="3000"/>
+  <test name="Enable" enabled="true">
+    <classes>
+      <class name="Pratice.Enable">
+		  <parameter name="browserName" value="Chrome"/>
+		  <methods>
+			  <include name="LaunchApp"/>
+			  <include name="EnterLoginDetails"/>
+			  <include name="VerifyLogin"/>
+		 </methods>
+		  </class>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Enable" enabled="true">
+	  <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="Pratice.Enable">
+		  <methods>
+			  <include name="LaunchApp"/>
+			  <include name="EnterLoginDEtails"/>
+			  <include name="NavigatedTOMyInfo"/>
+			  <include name="VerifyMyInfo"/>
+		 </methods>
+		  </class>
+    </classes>
+    </test>
+</suite> <!-- Suite -->
